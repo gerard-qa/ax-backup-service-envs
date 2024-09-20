@@ -1,20 +1,20 @@
 {
-  "name": "test-folder",
+  "name": "ax-coverage-report",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "extract.js",
+  "bin": {
+    "generate-json": "./extract.js",
+    "compare-reports": "./compare.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "backup": "ts-node run.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs-extra": "^11.2.0",
-    "moment": "^2.30.1"
-  },
-  "devDependencies": {
-    "@types/fs-extra": "^11.0.4"
+    "@types/node": "^22.0.0",
+    "cheerio": "1.0.0-rc.12",
+    "commander": "^12.1.0"
   }
 }
